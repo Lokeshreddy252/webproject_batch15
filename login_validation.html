@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+ 
+  <title>Sign-in</title>
+</head>
+
+<body>
+  <div class="main">
+    <p class="Sign" align="center">Sign-in</p>
+    <form class="form1">
+      <input class="un" type="text" id="username" align="center" placeholder="username">
+      <input class="pass" type="password" id="password" align="center" placeholder="Password">
+      <div class="submit" >
+        <button type="submit" align="center">Sign-in</button>
+      </div>
+      <p class="Register" align="center"><a href="registrationpage.html">Register</a></p>
+    </form>
+  </div>
+  <script>
+    document.querySelector(".form1").addEventListener("submit", function (event) {
+      event.preventDefault(); 
+      const username = document.getElementById("username").value;
+      const password = document.getElementById("password").value;
+      if (username === "username" && password === "password") {
+        alert("Login successfully");
+      } else {
+        alert("Invalid credentials. Please try again.");
+      }
+    });
+  </script>
+</body>
+
+</html>

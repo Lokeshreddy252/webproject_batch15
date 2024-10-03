@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="clothdonation.css">
+    <title>Donate Clothes</title>
+</head>
+<body>
+    <header>
+        <h1>Donate Clothes</h1>
+    </header>
+    <main>
+        <section id="donate-info">
+            <h2>Why Donate Clothes?</h2>
+            <p>Your gently-used clothes can make a big difference in the lives of those in need. By donating clothes, you help provide warmth and comfort to people who may not have access to them.</p>
+        </section>
+        <section id="donate-form">
+            <h2>Donate Your Clothes</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="Phone-no">Phone-no:</label>
+                <input type="text" id="Phone-no" name="Phone-no" required>
+                <label for="Address">Address:</label>
+                <input type="text" id="Address" name="Address" required>
+                <label for="Gender">Gender:</label>
+                <input type="radio" name="gender" value="male"> Male
+                <input type="radio" name="gender" value="female"> Female
+
+                <label for="Cloths">Choose the Size of Cloths:</label>
+                <select name="Cloths" id="Cloths">
+                    <option value="S">S</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                    <option value="XXL">XXL</option>
+                    <option value="XXXL">XXXL</option>
+                </select>
+                <label for="clothes">Clothes to Donate:</label>
+                <textarea id="clothes" name="clothes" required></textarea>
+                <button type="submit">Submit Donation</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Donate Clothes</p>
+    </footer>
+</body>
+</html>
